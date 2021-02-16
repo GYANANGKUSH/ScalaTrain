@@ -1,0 +1,33 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\train\target\scala-2.11\test-classes ...
+[info] done compiling
+[info] JourneyPlannerSpec:
+[info] TrainSpec:
+[info] stations
+[info] Train ice724
+[info] - should be correctly initialized
+[info] - should stop in Nuremberg
+[info] calling trainsAt
+[info] - should not stop in Essen
+[info] - should return the correct trains
+[info] Train ice726
+[info] Calling stopsAt
+[info] - should stop in Munich
+[info] - should return correct stops
+[info] - should not stop in Cologne
+[info] Calling inShortTrip
+[info] Creating a Train
+[info] - should return true if 0 or 1 station in between
+[info] - should throw an IllegalArgumentException for a schedule with 0 or 1 elements
+[info] - should return false if more than 1 station in between
+[info] stations
+[info] - should be initialized correctly
+[info] Run completed in 375 milliseconds.
+[info] Total number of tests run: 11
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 5 s, completed Feb 15, 2021 12:54:54 AM
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,57 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources to D:\train\target\scala-2.11\test-classes ...
+[info] done compiling
+[info] JourneyPlannerSpec:
+[info] TrainSpec:
+[info] stations
+[info] Train nfr724
+[info] - should be correctly initialized
+[info] - should stop in Dibru
+[info] calling trainsAt
+[info] - should not stop in Ghy
+[info] - should return the correct trains
+[info] Train nfr726
+[info] Calling stopsAt
+[info] - should stop in Tinsukia
+[info] - should return correct stops
+[info] - should not stop in Jorhat
+[info] Calling inShortTrip
+[info] Creating a Train
+[info] - should return true if 0 or 1 station in between
+[info] - should throw an IllegalArgumentException for a schedule with 0 or 1 elements
+[info] - should return false if more than 1 station in between
+[info] stations
+[info] - should be initialized correctly
+[info] TimeSpec:
+[info] asMinutes
+[info] - should be initialized correctly
+[info] Calling minus or -
+[info] - should return the difference in minutes
+[info] Calling val toString
+[info] - should return proper formatted string representation
+[info] Calling Ordered operators - compare
+[info] - should work as expected
+[info] Default args in Time() for hours and minutes
+[info] - should be equal to 0
+[info] Creating a Time
+[info] - should throw an IllegalArgumentException for hours not in range[0,23] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:46)
+[info] - should throw an IllegalArgumentException for minutes not in range[0,59] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:50)
+[info] Calling fromJson
+[info] - should return Some wrapping a properly initialized Time for a valid JsonObject
+[info] - should return None for an invalid json
+[info] Calling fromJson after toJson
+[info] - should return Some wrapping the original Time
+[info] Run completed in 384 milliseconds.
+[info] Total number of tests run: 21
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 19, failed 2, canceled 0, ignored 0, pending 0
+[info] *** 2 TESTS FAILED ***
+[error] Failed tests:
+[error] 	com.typesafe.training.scalatrain.TimeSpec
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 3 s, completed Feb 15, 2021 10:24:36 AM
+[debug] > Exec(idea-shell, None, None)

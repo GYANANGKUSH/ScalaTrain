@@ -1,0 +1,6 @@
+[debug] > Exec(console, None, None)
+[debug] Evaluating tasks: Compile / console
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\train\target\scala-2.13\classes ...
+[info] done compiling
+[info] Starting scala interpreter...

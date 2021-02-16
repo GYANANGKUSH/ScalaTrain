@@ -1,0 +1,11 @@
+[debug] > Exec(console, Some(90b2325b-7418-4dc9-bb68-3854fedb176a), Some(CommandSource(console0)))
+[debug] Evaluating tasks: Compile / console
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] Starting scala interpreter...
+[warn] Canceling execution...
+[warn] Run canceled.
+[error] Cancelled: console
+[error] Cancelled: console
+[error] Use 'last' for the full log.
+[debug] > Exec(shell, None, None)
+[debug] Forcing garbage collection...

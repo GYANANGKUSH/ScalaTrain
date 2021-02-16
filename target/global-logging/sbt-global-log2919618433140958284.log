@@ -1,0 +1,102 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] TrainSpec:
+[info] Train ice724
+[info] Exception encountered when attempting to run a suite with class name: com.typesafe.training.scalatrain.TrainSpec *** ABORTED ***
+[info]   java.lang.NoClassDefFoundError: Could not initialize class com.typesafe.training.scalatrain.TestData$
+[info]   at com.typesafe.training.scalatrain.TrainSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(TrainSpec.scala:17)
+[info]   at com.typesafe.training.scalatrain.TrainSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(TrainSpec.scala:17)
+[info]   at com.typesafe.training.scalatrain.TrainSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(TrainSpec.scala:17)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.WordSpecLike$$anon$1.apply(WordSpecLike.scala:953)
+[info] JourneyPlannerSpec:
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+[info] stations
+[info]   ...
+[info] Exception encountered when attempting to run a suite with class name: com.typesafe.training.scalatrain.JourneyPlannerSpec *** ABORTED ***
+[info]   java.lang.ExceptionInInitializerError:
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(JourneyPlannerSpec.scala:9)
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(JourneyPlannerSpec.scala:9)
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(JourneyPlannerSpec.scala:9)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.WordSpecLike$$anon$1.apply(WordSpecLike.scala:953)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+[info]   ...
+[info]   Cause: java.lang.IllegalArgumentException: requirement failed: INPUT MINUTES RANGE 0 - 59
+[info]   at scala.Predef$.require(Predef.scala:219)
+[info]   at com.typesafe.training.scalatrain.Time.<init>(Time.scala:12)
+[info]   at com.typesafe.training.scalatrain.TestData$.<init>(TestData.scala:19)
+[info]   at com.typesafe.training.scalatrain.TestData$.<clinit>(TestData.scala)
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(JourneyPlannerSpec.scala:9)
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(JourneyPlannerSpec.scala:9)
+[info]   at com.typesafe.training.scalatrain.JourneyPlannerSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(JourneyPlannerSpec.scala:9)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   ...
+[info] TimeSpec:
+[info] asMinutes
+[info] - should be initialized correctly
+[info] Calling minus or -
+[info] - should return the difference in minutes
+[info] Calling val toString
+[info] - should return proper formatted string representation
+[info] Calling Ordered operators - compare
+[info] - should work as expected
+[info] Default args in Time() for hours and minutes
+[info] - should be equal to 0
+[info] Creating a Time
+[info] - should throw an IllegalArgumentException for hours not in range[0,23] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:46)
+[info] - should throw an IllegalArgumentException for minutes not in range[0,59] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:50)
+[info] Calling fromJson
+[info] - should return Some wrapping a properly initialized Time for a valid JsonObject
+[info] - should return None for an invalid json
+[info] Calling fromJson after toJson
+[info] - should return Some wrapping the original Time
+[error] Test suite com.typesafe.training.scalatrain.TrainSpec failed with java.lang.NoClassDefFoundError: Could not initialize class com.typesafe.training.scalatrain.TestData$.
+[error] This may be due to the ClassLoaderLayeringStrategy (ScalaLibrary) used by your task.
+[error] To improve performance and reduce memory, sbt attempts to cache the class loaders used to load the project dependencies.
+[error] The project class files are loaded in a separate class loader that is created for each test run.
+[error] The test class loader accesses the project dependency classes using the cached project dependency classloader.
+[error] With this approach, class loading may fail under the following conditions:
+[error] 
+[error]  * Dependencies use reflection to access classes in your project's classpath.
+[error]    Java serialization/deserialization may cause this.
+[error]  * An open package is accessed across layers. If the project's classes access or extend
+[error]    jvm package private classes defined in a project dependency, it may cause an IllegalAccessError
+[error]    because the jvm enforces package private at the classloader level.
+[error] 
+[error] These issues, along with others that were not enumerated above, may be resolved by changing the class loader layering strategy.
+[error] The Flat and ScalaLibrary strategies bundle the full project classpath in the same class loader.
+[error] To use one of these strategies, set the  ClassLoaderLayeringStrategy key
+[error] in your configuration, for example:
+[error] 
+[error] set train / Test / classLoaderLayeringStrategy := ClassLoaderLayeringStrategy.ScalaLibrary
+[error] set train / Test / classLoaderLayeringStrategy := ClassLoaderLayeringStrategy.Flat
+[error] 
+[error] See ClassLoaderLayeringStrategy.scala for the full list of options.
+[info] Run completed in 476 milliseconds.
+[info] Total number of tests run: 10
+[info] Suites: completed 1, aborted 2
+[info] Tests: succeeded 8, failed 2, canceled 0, ignored 0, pending 0
+[info] *** 2 SUITES ABORTED ***
+[info] *** 2 TESTS FAILED ***
+[error] Failed tests:
+[error] 	com.typesafe.training.scalatrain.TimeSpec
+[error] Error during tests:
+[error] 	com.typesafe.training.scalatrain.TrainSpec
+[error] 	com.typesafe.training.scalatrain.JourneyPlannerSpec
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 1 s, completed Feb 15, 2021 2:22:04 AM
+[debug] > Exec(idea-shell, None, None)

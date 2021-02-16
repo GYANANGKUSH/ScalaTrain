@@ -1,0 +1,73 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources to D:\train\target\scala-2.11\test-classes ...
+[warn] D:\train\src\test\scala\com\typesafe\training\scalatrain\TimeSpec.scala:46:56: a pure expression does nothing in statement position; you may be omitting necessary parentheses
+[warn]       an[IllegalArgumentException] should be thrownBy(-1)
+[warn]                                                        ^
+[warn] D:\train\src\test\scala\com\typesafe\training\scalatrain\TimeSpec.scala:47:55: a pure expression does nothing in statement position; you may be omitting necessary parentheses
+[warn]       an[IllegalArgumentException] should be thrownBy(24)
+[warn]                                                       ^
+[warn] D:\train\src\test\scala\com\typesafe\training\scalatrain\TimeSpec.scala:50:56: a pure expression does nothing in statement position; you may be omitting necessary parentheses
+[warn]       an[IllegalArgumentException] should be thrownBy(-1)
+[warn]                                                        ^
+[warn] D:\train\src\test\scala\com\typesafe\training\scalatrain\TimeSpec.scala:51:55: a pure expression does nothing in statement position; you may be omitting necessary parentheses
+[warn]       an[IllegalArgumentException] should be thrownBy(60)
+[warn]                                                       ^
+[warn] four warnings found
+[info] done compiling
+[info] JourneyPlannerSpec:
+[info] stations
+[info] - should be correctly initialized
+[info] calling trainsAt
+[info] TrainSpec:
+[info] - should return the correct trains
+[info] Train ice724
+[info] Calling stopsAt
+[info] - should stop in Nuremberg
+[info] - should return correct stops
+[info] - should not stop in Essen
+[info] Calling inShortTrip
+[info] Train ice726
+[info] - should return true if 0 or 1 station in between
+[info] - should stop in Munich
+[info] - should return false if more than 1 station in between
+[info] - should not stop in Cologne
+[info] Creating a Train
+[info] - should throw an IllegalArgumentException for a schedule with 0 or 1 elements
+[info] stations
+[info] - should be initialized correctly
+[info] TimeSpec:
+[info] asMinutes
+[info] - should be initialized correctly
+[info] Calling minus or -
+[info] - should return the difference in minutes *** FAILED ***
+[info]   -20 did not equal 20 (TimeSpec.scala:16)
+[info] Calling val toString
+[info] - should return proper formatted string representation
+[info] Calling Ordered operators - compare
+[info] - should work as expected
+[info] Default args in Time() for hours and minutes
+[info] - should be equal to 0
+[info] Creating a Time
+[info] - should throw an IllegalArgumentException for hours not in range[0,23] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:45)
+[info] - should throw an IllegalArgumentException for minutes not in range[0,59] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but no exception was thrown. (TimeSpec.scala:49)
+[info] Calling fromJson
+[info] - should return Some wrapping a properly initialized Time for a valid JsonObject *** FAILED ***
+[info]   None did not equal Some(05:20) (TimeSpec.scala:57)
+[info] - should return None for an invalid json
+[info] Calling fromJson after toJson
+[info] - should return Some wrapping the original Time *** FAILED ***
+[info]   None did not equal Some(06:40) (TimeSpec.scala:67)
+[info] Run completed in 461 milliseconds.
+[info] Total number of tests run: 21
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 16, failed 5, canceled 0, ignored 0, pending 0
+[info] *** 5 TESTS FAILED ***
+[error] Failed tests:
+[error] 	com.typesafe.training.scalatrain.TimeSpec
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 3 s, completed Feb 15, 2021 2:05:50 AM
+[debug] > Exec(idea-shell, None, None)

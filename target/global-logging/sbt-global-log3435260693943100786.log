@@ -1,0 +1,11 @@
+[debug] > Exec(val tra = Train(RegionalExpress(123), Seq((Time(1,20),Station("Tsk")),(Time(2,20),Station("Dbr")),(Time(2,10),Station("Sib")))), None, None)
+[error] Expected ID character
+[error] Not a valid command: val (similar: eval, alias, apply)
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: val
+[error] val tra = Train(RegionalExpress(123), Seq((Time(1,20),Station("Tsk")),(Time(2,20),Station("Dbr")),(Time(2,10),Station("Sib"))))
+[error]    ^
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,54 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] JourneyPlannerSpec:
+[info] stations
+[info] - should be correctly initialized
+[info] Calling trainsAt
+[info] - should return the correct trains
+[info] Calling stopsAt
+[info] - should return correct stops
+[info] Calling inShortTrip
+[info] TrainSpec:
+[info] - should return true if 0 or 1 station in between
+[info] Train nfr724
+[info] - should return false if more than 1 station in between
+[info] - should stop in Dibru
+[info] - should not stop in Ghy
+[info] Train nfr726
+[info] - should stop in Tinsukia
+[info] - should not stop in Jorhat
+[info] Train nfr750
+[info] - should stop in Dibru
+[info] - should not stop in Tinsukia
+[info] Creating a Train
+[info] - should throw an IllegalArgumentException for a schedule with 0 or 1 elements
+[info] stations
+[info] - should be initialized correctly
+[info] TimeSpec:
+[info] asMinutes
+[info] - should be initialized correctly
+[info] Calling minus or -
+[info] - should return the difference in minutes
+[info] Calling val toString
+[info] - should return proper formatted string representation
+[info] Calling Ordered operators - compare
+[info] - should work as expected
+[info] Default args in Time() for hours and minutes
+[info] - should be equal to 0
+[info] Creating a Time
+[info] - should throw an IllegalArgumentException for hours not in range[0,23]
+[info] - should throw an IllegalArgumentException for minutes not in range[0,59]
+[info] Calling fromJson
+[info] - should return Some wrapping a properly initialized Time for a valid JsonObject
+[info] - should return None for an invalid json
+[info] Calling fromJson after toJson
+[info] - should return Some wrapping the original Time
+[info] Run completed in 404 milliseconds.
+[info] Total number of tests run: 23
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 23, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[debug] Forcing garbage collection...
+[success] Total time: 2 s, completed Feb 15, 2021 11:53:24 AM
+[debug] > Exec(idea-shell, None, None)

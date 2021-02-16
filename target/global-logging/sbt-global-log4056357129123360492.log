@@ -1,0 +1,14 @@
+[debug] > Exec(console, None, None)
+[debug] Evaluating tasks: Compile / console
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\train\target\scala-2.13\classes ...
+[error] D:\train\src\main\scala\com\typesafe\training\scalatrain\Train.scala:6:3: overloaded method require with alternatives:
+[error]   (requirement: Boolean,message: => Any)Unit <and>
+[error]   (requirement: Boolean)Unit
+[error]  cannot be applied to ()
+[error]   require()
+[error]   ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed Feb 11, 2021 12:30:14 PM
+[debug] > Exec(idea-shell, None, None)

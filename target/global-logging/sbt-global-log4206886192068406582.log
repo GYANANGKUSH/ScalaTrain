@@ -1,0 +1,8 @@
+[debug] > Exec(consoleonsole, None, None)
+[error] Not a valid command: consoleonsole (similar: completions)
+[error] Not a valid project ID: consoleonsole
+[error] Expected ':'
+[error] Not a valid key: consoleonsole (similar: console, consoleProject)
+[error] consoleonsole
+[error]              ^
+[debug] > Exec(idea-shell, None, None)
