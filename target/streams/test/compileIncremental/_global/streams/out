@@ -1,6 +1,38 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 51 products, 4 sources, 3 libraries
-[debug] current source = Set(${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpec.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TestData.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TimeSpec.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpec.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
-[debug] No changes
+[debug] previous = Stamps for: 89 products, 10 sources, 3 libraries
+[debug] current source = Set(${BASE}/src/test/scala/com/typesafe/training/scalatrain/TimeSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/support/KoanSuite.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TestData.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/support/BlankValues.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TimeSpec.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpec.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpec.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/Koans.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpecKoan.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] 
+[debug] Initial source changes:
+[debug] 	removed: Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpecKoan.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(com.typesafe.training.scalatrain.JourneyPlannerSpecKoan, com.typesafe.training.scalatrain.TrainSpecKoan)
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(com.typesafe.training.scalatrain.JourneyPlannerSpecKoan, com.typesafe.training.scalatrain.TrainSpecKoan)
+[debug] All initially invalidated sources:Set(${BASE}/src/test/scala/com/typesafe/training/scalatrain/JourneyPlannerSpecKoan.scala, ${BASE}/src/test/scala/com/typesafe/training/scalatrain/TrainSpecKoan.scala)
+[debug] Initial set of included nodes: com.typesafe.training.scalatrain.JourneyPlannerSpecKoan, com.typesafe.training.scalatrain.TrainSpecKoan
+[debug] compilation cycle 1
+[info] compiling 2 Scala sources to D:\train\target\scala-2.11\test-classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.11:1.4.4:compile for Scala 2.11.7
+[debug] [zinc] Running cached compiler a38e105 for Scala compiler version 2.11.7
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\resources.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\rt.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\sunrsasign.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\jsse.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\jce.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\charsets.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\lib\jfr.jar;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\jre\classes;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.7\scala-library-2.11.7.jar
+[debug] 	-classpath
+[debug] 	D:\train\target\scala-2.11\test-classes;D:\train\target\scala-2.11\classes;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest_2.11\2.2.4\scalatest_2.11-2.2.4.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-json_2.11\2.3.10\play-json_2.11-2.3.10.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.7\scala-reflect-2.11.7.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-iteratees_2.11\2.3.10\play-iteratees_2.11-2.3.10.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-functional_2.11\2.3.10\play-functional_2.11-2.3.10.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-datacommons_2.11\2.3.10\play-datacommons_2.11-2.3.10.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\joda\joda-convert\1.6\joda-convert-1.6.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.3.2\jackson-annotations-2.3.2.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.3.2\jackson-core-2.3.2.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.3.2\jackson-databind-2.3.2.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-stm\scala-stm_2.11\0.7\scala-stm_2.11-0.7.jar;C:\Users\Asus PC\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.2.1\config-1.2.1.jar
+[debug] New invalidations:
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] Final step, transitive dependencies:
+[debug] 	Set()
+[debug] No classes were invalidated.
+[debug] Scala compilation took 0.8791599 s
+[info] done compiling

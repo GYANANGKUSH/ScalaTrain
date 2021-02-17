@@ -1,7 +1,3 @@
-/*
- * Copyright © 2012 Typesafe, Inc. All rights reserved.
- */
-
 package com.typesafe.training.scalatrain
 
 import com.typesafe.training.scalatrain.TestData._

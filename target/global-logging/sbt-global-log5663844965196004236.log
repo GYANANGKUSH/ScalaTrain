@@ -1,0 +1,33 @@
+[debug] > Exec(testOnly com.typesafe.training.scalatrain.TimeSpecKoan, None, None)
+[debug] Evaluating tasks: Test / testOnly
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\train\target\scala-2.11\test-classes ...
+[info] done compiling
+[info] TimeSpecKoan:
+[info] - Calling asMinutes
+[info] - Calling minus or -
+[info] - Calling val toString
+[info] - Default args in Time()
+[info] - Creating a Time with hours range[0,23]
+[info]   +  
+[info]   + *************************************************************** 
+[info]   +  
+[info]   + ***** INSIDE THE SUITE: TimeSpecKoan.scala ***** 
+[info]   +  
+[info]   + Pending/failed test condition: Creating a Time with minutes range[0,59] 
+[info]   +  
+[info]   + *************************************************************** 
+[info]   +  
+[info] - Creating a Time with minutes range[0,59] *** FAILED ***
+[info]   Expected exception java.lang.IllegalArgumentException to be thrown, but org.scalatest.exceptions.TestPendingException was thrown. (TimeSpecKoan.scala:36)
+[info] Info Provided - TimeSpecKoan: The run method of a Suite is returning because a stop was requested.
+[info] Run completed in 164 milliseconds.
+[info] Total number of tests run: 6
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 5, failed 1, canceled 0, ignored 0, pending 0
+[info] *** 1 TEST FAILED ***
+[error] Failed tests:
+[error] 	com.typesafe.training.scalatrain.TimeSpecKoan
+[error] (Test / testOnly) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 1 s, completed Feb 16, 2021 5:20:46 PM
+[debug] > Exec(idea-shell, None, None)

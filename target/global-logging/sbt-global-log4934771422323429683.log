@@ -1,0 +1,38 @@
+[debug] > Exec(testOnly com.typesafe.training.scalatrain.Koans, None, None)
+[debug] Evaluating tasks: Test / testOnly
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources to D:\train\target\scala-2.11\test-classes ...
+[info] done compiling
+[info] TimeSpecKoan:
+[info] - Calling asMinutes
+[info] - Calling minus or -
+[info] - Calling val toString
+[info] - Default args in Time()
+[info] - Creating a Time with hours range[0,23]
+[info] - Creating a Time with minutes range[0,59]
+[info] - Calling fromJson
+[info] - Calling fromJson after toJson
+[info] TrainSpecKoan:
+[info] - Train nfr724 stop in Dibru, not in Ghy
+[info] - Train nfr726 stop in Tinsukia, not in Jorhat
+[info] - Train nfr750 stop in Dibru, not in Tinsukia
+[info] - Creating a Train must throw IAE for 'schedule' with 0 or 1 element
+[info]   +  
+[info]   + *************************************************************** 
+[info]   +  
+[info]   + ***** INSIDE THE SUITE: TrainSpecKoan.scala ***** 
+[info]   +  
+[info]   + Pending/failed test condition: stations must be initialized correctly 
+[info]   +  
+[info]   + *************************************************************** 
+[info]   +  
+[info] - stations must be initialized correctly (pending)
+[info] Info Provided - TrainSpecKoan: The run method of a Suite is returning because a stop was requested.
+[info] Info Provided - Koans: The run method of a Suite is returning because a stop was requested.
+[info] Run completed in 266 milliseconds.
+[info] Total number of tests run: 12
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 12, failed 0, canceled 0, ignored 0, pending 1
+[info] All tests passed.
+[success] Total time: 1 s, completed Feb 16, 2021 6:03:08 PM
+[debug] > Exec(idea-shell, None, None)

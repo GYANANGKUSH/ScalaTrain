@@ -1,0 +1,8 @@
+[debug] > Exec(koan, None, None)
+[error] Not a valid command: koan (similar: loadp)
+[error] Not a valid project ID: koan (similar: train)
+[error] Expected ':'
+[error] Not a valid key: koan (similar: clean, commands)
+[error] koan
+[error]     ^
+[debug] > Exec(idea-shell, None, None)

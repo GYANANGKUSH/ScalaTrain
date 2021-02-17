@@ -1,1 +1,1 @@
-["com.typesafe.training.scalatrain.TimeSpec","com.typesafe.training.scalatrain.TrainSpec","com.typesafe.training.scalatrain.JourneyPlannerSpec"]
+["com.typesafe.training.scalatrain.TrainSpec","com.typesafe.training.scalatrain.JourneyPlannerSpecKoan","com.typesafe.training.scalatrain.Koans","com.typesafe.training.scalatrain.TimeSpec","com.typesafe.training.scalatrain.JourneyPlannerSpec","com.typesafe.training.scalatrain.TimeSpecKoan","com.typesafe.training.scalatrain.TrainSpecKoan"]

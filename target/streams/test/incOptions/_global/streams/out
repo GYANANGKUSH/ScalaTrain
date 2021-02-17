@@ -1,2 +1,47 @@
 [debug] Created transactional ClassFileManager with tempDir = D:\train\target\scala-2.11\test-classes.bak
+[debug] About to delete class files:
+[debug] 	TrainSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$1.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$4.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$1.class
+[debug] 	JourneyPlannerSpecKoan.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan$$anonfun$3.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$1.class
+[debug] 	TrainSpecKoan$$anonfun$4.class
+[debug] 	TrainSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$2.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$3.class
+[debug] We backup class files:
+[debug] 	TrainSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$1.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$4.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$1.class
+[debug] 	JourneyPlannerSpecKoan.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan$$anonfun$3.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$1.class
+[debug] 	TrainSpecKoan$$anonfun$4.class
+[debug] 	TrainSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$2.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$3.class
+[debug] Registering generated classes:
+[debug] 	TrainSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$1.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$4.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$2.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$1.class
+[debug] 	JourneyPlannerSpecKoan.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan$$anonfun$3.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$1.class
+[debug] 	TrainSpecKoan$$anonfun$4.class
+[debug] 	TrainSpecKoan$$anonfun$5.class
+[debug] 	TrainSpecKoan.class
+[debug] 	TrainSpecKoan$$anonfun$4$$anonfun$apply$mcV$sp$2.class
+[debug] 	JourneyPlannerSpecKoan$$anonfun$3.class
 [debug] Removing the temporary directory used for backing up class files: D:\train\target\scala-2.11\test-classes.bak

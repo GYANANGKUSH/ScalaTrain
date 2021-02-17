@@ -1,5 +1,6 @@
 #Successful Tests
-#Tue Feb 16 12:03:15 IST 2021
-com.typesafe.training.scalatrain.TrainSpec=1613457195874
-com.typesafe.training.scalatrain.TimeSpec=1613457195970
-com.typesafe.training.scalatrain.JourneyPlannerSpec=1613457195874
+#Tue Feb 16 18:03:08 IST 2021
+com.typesafe.training.scalatrain.Koans=1613478788520
+com.typesafe.training.scalatrain.TimeSpecKoan=1613478457018
+com.typesafe.training.scalatrain.TrainSpecKoan=1613478468610
+com.typesafe.training.scalatrain.JourneyPlannerSpecKoan=1613478431813

@@ -1,0 +1,11 @@
+[debug] > Exec(koan show, None, None)
+[error] Expected ID character
+[error] Not a valid command: koan (similar: loadp)
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: koan (similar: clean, commands)
+[error] koan show
+[error]     ^
+[debug] > Exec(idea-shell, None, None)
